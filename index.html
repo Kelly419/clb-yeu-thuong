@@ -1007,6 +1007,22 @@ function submitReg(){
   saveRegs(regs)
   updateCount()
 
+  // Gửi về Formspree
+  fetch('https://formspree.io/f/maqgjypy', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+    body: JSON.stringify({
+      'Họ và tên': name,
+      'Tuổi': age,
+      'Giới tính': gender,
+      'Tỉnh/Thành phố': city,
+      'Mục đích': goal,
+      'Link Facebook': fb,
+      'Giới thiệu': bio || '(Không có)',
+      '_subject': '🌸 Đăng ký mới - CLB Tuổi Trung Niên: ' + name
+    })
+  }).catch(function(){})
+
   document.getElementById('theForm').style.display='none'
   document.getElementById('successBox').classList.add('show')
 }
