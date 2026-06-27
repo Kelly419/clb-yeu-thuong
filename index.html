@@ -329,7 +329,7 @@ footer{background:var(--text);color:#fff;padding:50px 20px 22px}
 
 /* ══ FLOAT BUTTON ══ */
 .floatcta{position:fixed;bottom:24px;right:24px;z-index:998}
-.floatbtn{background:linear-gradient(135deg,#0078FF,#A033FF,#FF3B8B);color:#fff;font-size:14px;font-weight:700;padding:14px 22px;border-radius:50px;border:none;box-shadow:0 8px 24px rgba(0,120,255,.45);display:flex;align-items:center;gap:9px;animation:pls 2.5s infinite;white-space:nowrap;text-decoration:none}
+.floatbtn{background:linear-gradient(135deg,var(--bur),var(--bur2));color:#fff;font-size:14px;font-weight:700;padding:14px 22px;border-radius:50px;border:none;box-shadow:0 8px 24px rgba(123,29,48,.45);display:flex;align-items:center;gap:9px;animation:pls 2.5s infinite;white-space:nowrap;text-decoration:none}
 .floatbtn:hover{transform:translateY(-2px) scale(1.03)}
 @keyframes pls{0%,100%{box-shadow:0 8px 24px rgba(123,29,48,.38)}50%{box-shadow:0 8px 30px rgba(123,29,48,.55),0 0 0 8px rgba(232,102,123,.12)}}
 
@@ -899,12 +899,13 @@ button.fsub {
 <!-- ══ FLOATING BUTTON ══ -->
 <div class="floatcta">
   <a href="https://m.me/tuoitrungnien.hp" target="_blank" class="floatbtn">
-  <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
-    <circle cx="24" cy="24" r="24" fill="white"/>
-    <path d="M24 8C15.163 8 8 14.71 8 23c0 4.49 1.97 8.52 5.13 11.37V40l5.04-2.77C19.7 37.7 21.8 38 24 38c8.837 0 16-6.71 16-15S32.837 8 24 8zm1.6 20.2l-4.08-4.35-7.96 4.35 8.76-9.3 4.18 4.35 7.86-4.35-8.76 9.3z" fill="url(#mg)"/>
-    <defs><linearGradient id="mg" x1="8" y1="24" x2="40" y2="24" gradientUnits="userSpaceOnUse"><stop stop-color="#0078FF"/><stop offset="1" stop-color="#A033FF"/></linearGradient></defs>
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+    <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
   </svg>
-  💬 Nhắn tin Messenger
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+    <path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.914 1.318 5.52 3.396 7.28V22l3.144-1.73c.839.232 1.73.356 2.46.356 5.523 0 10-4.144 10-9.243C21 6.145 17.523 2 12 2zm1.018 12.443l-2.545-2.714-4.965 2.714 5.464-5.799 2.608 2.714 4.9-2.714-5.462 5.799z"/>
+  </svg>
+  Nhắn tin Messenger
 </a>
 </div>
 
